@@ -34,17 +34,4 @@ class ProductosController extends Controller
         ]);
         exit;
     }
-    public function guardar(){
-    $data = $_POST;
-    //validar datos
-    if(!empty($data['categoria']) && !empty($data['codigo']) && !empty($data
-    ['nombre']) && !empty($data['descripcion']) && !empty($data['precio']) &&
-    !empty($data['stock'])){
-        //guardar producto
-        //llmar al modelo de productos para guardar el producto en la base de
-        datos
-    }else{
-        header('Location: ' . BASE_URL . '/admin/productos/nuevo');
-    }
-}
 }

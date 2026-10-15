@@ -1,19 +1,13 @@
 <?php require __DIR__ . '/../../layouts/header.php'; ?>
 <div class="card p-3">
     <h3>Registrar Nuevo Producto</h3>
-    <form action="<?= BASE_URL ?>/admin/productos/guardar" method="post">
+    <form action="" method="post">
         <!-- Row 1 -->
         <div class="row">
             <div class="col-md-4 form-group">
                 <label for="categoria">Categoria :</label>
                 <select name="categoria" id="categoria" class="form-control" required>
-                    <?php foreach ($categorias as $categoria): ?>
-                        <option value="<?php echo $categoria->id; ?>"><?php echo $categoria->nombre; ?></option>
-                        <option value="">tecnologia</option>
-                        <option value="">Calzado</option>
-                    <?php endforeach; ?>
-                   
-                    
+                    <option value="">Seleccione...</option>
                     <!-- Agrega tus opciones dinámicamente desde la BD si lo deseas -->
                 </select>
             </div>
